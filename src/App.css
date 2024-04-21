@@ -1,0 +1,123 @@
+body{   /*Se saca todo lo que el body pudiera tener de estilos*/
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+#root {   /*Es la que va a contener a la pagina*/
+  width: 100%;
+  height: 633px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;  
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.navbar{   /*Estilos de la barra de navegacion*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  align-items: center;
+  display: flex;
+}
+
+ul{   /*Estilos de la lista desordenada que tiene adentro la navbar*/
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{   /*Estilos de los items que tiene la lista de la navbar*/
+  list-style: none;   /*Se le sacan los estilos que tiene la lista*/
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  /*min-height: 100vh;*/
+  flex-direction: column;
+}
+
+.principal{
+  width: 80%;
+  height: 525px;
+  background-color: rgb(197, 217, 224);
+}
+
+.principal h1{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.principal h2{
+  font-size: 20px;
+}
+
+.principal p{
+  font-size: 15px;
+}
+
+.aside{
+  width: 20%;
+  height: 525px;
+  background-color: rgb(154, 187, 187);
+  display: inline-block;
+}
+
+.aside h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.aside p{
+  font-size: 10px;
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: blue;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer p{
+  font-size: small;
+  color: #888;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
